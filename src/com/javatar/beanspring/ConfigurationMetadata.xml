@@ -9,4 +9,10 @@
         <property name="name" value="Sam"/>
     </bean>
 
+    <bean id="accountService" class="com.javatar.beanspring.AccountService"></bean>
+
+    <bean id="userService" class="com.javatar.beanspring.UserService">
+        <property name="accountService" ref="accountService"/>
+    </bean>
+
 </beans>
