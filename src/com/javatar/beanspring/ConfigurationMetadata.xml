@@ -4,7 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person" class="com.javatar.beanspring.Person">
+    <bean id="person"
+          class="com.javatar.beanspring.Person"
+          init-method="createdTable"
+          destroy-method="connectionClose">
         <property name="id" value="1"/>
         <property name="name" value="Sam"/>
     </bean>

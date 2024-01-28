@@ -20,4 +20,12 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void createdTable() {
+        System.out.println("Created Table");
+    }
+
+    public void connectionClose(){
+        System.out.println("Connection Close");
+    }
 }
